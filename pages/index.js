@@ -26,7 +26,7 @@ export default function Home() {
         alert("email anda: " + values.email + "password anda: " + values.password)
         try {
             await login(values.email, values.password)
-            await router.push('/dashboard')
+            router.push('/home')
         } catch (err) {
             console.log(err)
         }
